@@ -1,0 +1,19 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/assets/*": ["./assets/*"],
+      "@resource-manager/types": ["../../packages/types/src/index.ts"],
+      "@resource-manager/api-client": ["../../packages/api-client/src/index.ts"],
+      "@resource-manager/schemas": ["../../packages/schemas/src/index.ts"]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts"
+  ]
+}
